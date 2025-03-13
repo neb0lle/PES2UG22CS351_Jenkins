@@ -12,12 +12,12 @@ pipeline {
         }
 
 
-        // stage('Build') {
-        //     steps {
-        //         build 'PES2UG22CS351-1'
-        //         sh 'g++ main.cpp -o output'
-        //     }
-        // }
+        stage('Build') {
+            steps {
+                build 'PES2UG22CS351-1'
+                sh 'g++ main2.cpp -o bruh'
+            }
+        }
 
         stage('Test') {
             steps {
